@@ -7,7 +7,7 @@
 
 header{
     display: flex;
-    background-color: aqua;
+    background: linear-gradient(50deg, orange, violet);
     justify-content: flex-start;
     padding: 20px;
 }
@@ -42,6 +42,7 @@ nav ul li{
     background: linear-gradient(45deg, #e94cdc, #4c28e4);
     animation-name: rotate;
     animation-duration: 2s;
+    animation-play-state: paused;
     animation-iteration-count: infinite;
     animation-timing-function: linear;    
 }
@@ -65,4 +66,57 @@ button{
     border-radius: 100px;
     border: none;
     background-color: white;
+    cursor: pointer;
+}
+
+.container:hover .border{
+    animation-play-state: running;
+}
+
+.heading{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    cursor: default;
+}
+
+.house-solid{
+    width: 30px;
+    height: 25px;
+}
+
+.heading-info {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 550px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.heading-info :hover{
+    color: red;
+    transition: 0.2s;
+}
+
+.search{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+}
+.magnifying-glass{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 9.5%;
+    left: 101%;
+}
+
+.about-image{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    height: 75vh;
 }
