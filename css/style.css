@@ -120,3 +120,39 @@ button{
     width: 90%;
     height: 75vh;
 }
+
+.order{
+    position: absolute;
+    left: 18%;
+    top: 44%;
+    background-color: skyblue;
+}
+
+.cart{
+    position: absolute;
+    left:18% ;
+    top: 36%;
+    background-color: skyblue;
+}
+
+.cart:hover{
+    background-color: white;
+    color: red;
+    font-style: italic;
+    border: 2px solid red;
+}
+
+.order:hover{
+    background-color: white;
+    color: red;
+    font-style: italic;
+    border: 2px solid red;
+}
+.content1{
+    position: absolute;
+    top: 34%;
+    left: 22%;
+    width: 400px;
+    color: skyblue;
+    font-size: small;
+}
