@@ -5,11 +5,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header{
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
     display: flex;
-    background: linear-gradient(50deg, orange, violet);
+    background: linear-gradient(50deg, skyblue, violet);
     justify-content: flex-start;
     padding: 20px;
+    height: 8vh;
 }
 
 nav ul li{
@@ -56,7 +61,7 @@ nav ul li{
     }
 }
 
-button{
+.btn{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -103,7 +108,12 @@ button{
     width: 60px;
     height: 30px;
     border-radius: 10px;
+    color: black;
 }
+.search:hover{
+    color: black;
+}
+
 .magnifying-glass{
     width: 30px;
     height: 25px;
@@ -122,37 +132,160 @@ button{
 }
 
 .order{
+    width: 95px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
     position: absolute;
-    left: 18%;
-    top: 44%;
+    left: 15%;
+    top: 43%;
     background-color: skyblue;
 }
 
 .cart{
+    width: 95px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
     position: absolute;
-    left:18% ;
-    top: 36%;
+    left:15% ;
+    top: 35%;
     background-color: skyblue;
+    box-sizing: border-box;
 }
 
 .cart:hover{
     background-color: white;
-    color: red;
-    font-style: italic;
-    border: 2px solid red;
+    font-weight: 600;
+    box-shadow: whitesmoke 0px 0px 50px;
 }
 
 .order:hover{
     background-color: white;
-    color: red;
-    font-style: italic;
-    border: 2px solid red;
+    font-weight: 600;
+    box-shadow: whitesmoke 0px 0px 20px;
 }
-.content1{
+.heading1{
     position: absolute;
     top: 34%;
     left: 22%;
+    color: white;
+}
+.content1{
+    position: absolute;
+    top: 39%;
+    left: 22%;
     width: 400px;
-    color: skyblue;
-    font-size: small;
+    color: white;
+    font-size: 14.5px;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+#services{
+    height: 40vh;
+}
+.services-containers{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border: 10px soild aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.service{
+    height: 150px;
+    width: 250px;
+    display: flex;
+    padding: 1rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 220px;
+    align-items: center;
+    top: 950px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    background-color: skyblue;
+    box-sizing: border-box;
+}
+
+.btn-container:hover{
+    background-color: white;
+    font-weight: 600;
+    box-shadow: aqua 0px 0px 10px;
+}
+
+
+.about1-img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 60%;
+    top: 140% ;
+}
+.about-btn{
+    width: 95px;
+    height: 35px;
+    border-radius: 100px;
+    border: black 0.1rem solid;
+    cursor: pointer;
+    position: absolute;
+    background-color: skyblue;
+    top: 192%;
+    left: 8%;
+}
+.about-btn:hover{
+    background-color: white;
+    font-weight: 600;
+    box-shadow: aqua 0px 0px 10px;
+}
+.abt p{
+    width: 600px;
+    font-size: medium;
+    padding-left: 120px;
+    font-weight: 500;
+    word-spacing: 2px;
+    margin: 0 auto;
+}
+.abt h1{
+    font-size: xx-large;
+    width: 300px;
+    padding-left: 120px;
+}
+.abt h3{
+    width: 600px;
+    padding-left: 120px;
+    margin: 10px;
+}
+
+.footer-info{
+    display: inline-block;
+    position: absolute;
+    top: 230%;
+    left: 30%;
+    bottom: 0%;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+.footer-info:hover{
+    color: red;
 }
